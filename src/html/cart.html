@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ch-zn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="renderer" content="webkit" />
+  <meta name="keywords" content="开来橱柜" />
+  <meta name="description" content="开来橱柜" />
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>购物车</title>
+  <link rel="stylesheet" href="../../dist/lib/css/reset.min.css" />
+  <link rel="stylesheet" href="../../dist/lib/css/swiper-3.4.0.min.css" />
+  <link rel="stylesheet" href="../../dist/css/all.min.css" />
+  <script src="../../dist/lib/js/flexible.js"></script>
+</head>
+
+<body class="bg-gary">
+  <!--在DOM加载前 内联JS，判断页面所处的设备-->
+  <script>
+    if (!dpr && !scale) {
+      var isAndroid = win.navigator.appVersion.match(/android/gi);
+      var isIPhone = win.navigator.appVersion.match(/iphone/gi);
+      var devicePixelRatio = win.devicePixelRatio;
+      if (isIPhone) {
+        // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+        if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {
+          dpr = 3;
+        } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)) {
+          dpr = 2;
+        } else {
+          dpr = 1;
+        }
+      } else {
+        // 其他设备下，仍旧使用1倍的方案
+        dpr = 1;
+      }
+      scale = 1 / dpr;
+    }
+  </script>
+  <div class="all-wrap">
+    <div class="all-head">
+      <!--购物车 头部-->
+      <div class="cart-tit-wrap">
+        <a class="back" href="javascript:window.history.back();"></a>
+        <div class="tit">购物车</div>
+      </div>
+    </div>
+    <div class="all-body">
+      <!--购物车list-->
+      <div class="cart-check-wrap mt-150">
+        <div class="cart-check-item">
+          <!--checkbox-->
+          <input type="checkbox">
+          <!--商品 详情-->
+          <div class="goods-box">
+            <!--商品展示图片-->
+            <div class="goods-pic">
+              <img src="//d6.yihaodianimg.com/N02/M01/38/75/CgQCslLKGKGAH9sLAAMz3yMF33Y53401_130x130.jpg" alt="">
+            </div>
+            <!--商品详情-->
+            <a class="goods-info" href="javascript:void(0);">
+              <span class="tit">360行车记录仪标准升级版 J501C 安霸A12 高清夜视 WIFI连接 智能管理 黑色</span>
+              <span class="tag">MC-CG321 </span>
+
+              <!--商品 按钮-->
+              <div class="goods-btn clear">
+                <span class="price">￥199</span>
+                <span class="del-goods"></span>
+                <div class="btn-group">
+                  <span>-</span>
+                  <input type="tel" value="1" />
+                  <span>+</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="cart-check-item">
+          <!--checkbox-->
+          <input type="checkbox">
+          <!--商品 详情-->
+          <div class="goods-box">
+            <!--商品展示图片-->
+            <div class="goods-pic">
+              <img src="//d6.yihaodianimg.com/N02/M01/38/75/CgQCslLKGKGAH9sLAAMz3yMF33Y53401_130x130.jpg" alt="">
+            </div>
+            <!--商品详情-->
+            <a class="goods-info" href="javascript:void(0);">
+              <span class="tit">360行车记录仪标准升级版 J501C 安霸A12 高清夜视 WIFI连接 智能管理 黑色</span>
+              <span class="tag">MC-CG321 </span>
+
+              <!--商品 按钮-->
+              <div class="goods-btn clear">
+                <span class="price">￥199</span>
+                <span class="del-goods"></span>
+                <div class="btn-group">
+                  <span>-</span>
+                  <input type="tel" value="1" />
+                  <span>+</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="cart-check-item">
+          <!--checkbox-->
+          <input type="checkbox">
+          <!--商品 详情-->
+          <div class="goods-box">
+            <!--商品展示图片-->
+            <div class="goods-pic">
+              <img src="//d6.yihaodianimg.com/N02/M01/38/75/CgQCslLKGKGAH9sLAAMz3yMF33Y53401_130x130.jpg" alt="">
+            </div>
+            <!--商品详情-->
+            <a class="goods-info" href="javascript:void(0);">
+              <span class="tit">360行车记录仪标准升级版 J501C 安霸A12 高清夜视 WIFI连接 智能管理 黑色</span>
+              <span class="tag">MC-CG321 </span>
+
+              <!--商品 按钮-->
+              <div class="goods-btn clear">
+                <span class="price">￥199</span>
+                <span class="del-goods"></span>
+                <div class="btn-group">
+                  <span>-</span>
+                  <input type="tel" value="1" />
+                  <span>+</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="cart-check-item">
+          <!--checkbox-->
+          <input type="checkbox">
+          <!--商品 详情-->
+          <div class="goods-box">
+            <!--商品展示图片-->
+            <div class="goods-pic">
+              <img src="//d6.yihaodianimg.com/N02/M01/38/75/CgQCslLKGKGAH9sLAAMz3yMF33Y53401_130x130.jpg" alt="">
+            </div>
+            <!--商品详情-->
+            <a class="goods-info" href="javascript:void(0);">
+              <span class="tit">360行车记录仪标准升级版 J501C 安霸A12 高清夜视 WIFI连接 智能管理 黑色</span>
+              <span class="tag">MC-CG321 </span>
+
+              <!--商品 按钮-->
+              <div class="goods-btn clear">
+                <span class="price">￥199</span>
+                <span class="del-goods"></span>
+                <div class="btn-group">
+                  <span>-</span>
+                  <input type="tel" value="1" />
+                  <span>+</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="cart-check-item">
+          <!--checkbox-->
+          <input type="checkbox">
+          <!--商品 详情-->
+          <div class="goods-box">
+            <!--商品展示图片-->
+            <div class="goods-pic">
+              <img src="//d6.yihaodianimg.com/N02/M01/38/75/CgQCslLKGKGAH9sLAAMz3yMF33Y53401_130x130.jpg" alt="">
+            </div>
+            <!--商品详情-->
+            <a class="goods-info" href="javascript:void(0);">
+              <span class="tit">360行车记录仪标准升级版 J501C 安霸A12 高清夜视 WIFI连接 智能管理 黑色</span>
+              <span class="tag">MC-CG321 </span>
+
+              <!--商品 按钮-->
+              <div class="goods-btn clear">
+                <span class="price">￥199</span>
+                <span class="del-goods"></span>
+                <div class="btn-group">
+                  <span>-</span>
+                  <input type="tel" value="1" />
+                  <span>+</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="cart-check-item">
+          <!--checkbox-->
+          <input type="checkbox">
+          <!--商品 详情-->
+          <div class="goods-box">
+            <!--商品展示图片-->
+            <div class="goods-pic">
+              <img src="//d6.yihaodianimg.com/N02/M01/38/75/CgQCslLKGKGAH9sLAAMz3yMF33Y53401_130x130.jpg" alt="">
+            </div>
+            <!--商品详情-->
+            <a class="goods-info" href="javascript:void(0);">
+              <span class="tit">360行车记录仪标准升级版 J501C 安霸A12 高清夜视 WIFI连接 智能管理 黑色</span>
+              <span class="tag">MC-CG321 </span>
+
+              <!--商品 按钮-->
+              <div class="goods-btn clear">
+                <span class="price">￥199</span>
+                <span class="del-goods"></span>
+                <div class="btn-group">
+                  <span>-</span>
+                  <input type="tel" value="1" />
+                  <span>+</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="cart-check-item">
+          <!--checkbox-->
+          <input type="checkbox">
+          <!--商品 详情-->
+          <div class="goods-box">
+            <!--商品展示图片-->
+            <div class="goods-pic">
+              <img src="//d6.yihaodianimg.com/N02/M01/38/75/CgQCslLKGKGAH9sLAAMz3yMF33Y53401_130x130.jpg" alt="">
+            </div>
+            <!--商品详情-->
+            <a class="goods-info" href="javascript:void(0);">
+              <span class="tit">360行车记录仪标准升级版 J501C 安霸A12 高清夜视 WIFI连接 智能管理 黑色</span>
+              <span class="tag">MC-CG321 </span>
+
+              <!--商品 按钮-->
+              <div class="goods-btn clear">
+                <span class="price">￥199</span>
+                <span class="del-goods"></span>
+                <div class="btn-group">
+                  <span>-</span>
+                  <input type="tel" value="1" />
+                  <span>+</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="cart-check-item">
+          <!--checkbox-->
+          <input type="checkbox">
+          <!--商品 详情-->
+          <div class="goods-box">
+            <!--商品展示图片-->
+            <div class="goods-pic">
+              <img src="//d6.yihaodianimg.com/N02/M01/38/75/CgQCslLKGKGAH9sLAAMz3yMF33Y53401_130x130.jpg" alt="">
+            </div>
+            <!--商品详情-->
+            <a class="goods-info" href="javascript:void(0);">
+              <span class="tit">360行车记录仪标准升级版 J501C 安霸A12 高清夜视 WIFI连接 智能管理 黑色</span>
+              <span class="tag">MC-CG321 </span>
+
+              <!--商品 按钮-->
+              <div class="goods-btn clear">
+                <span class="price">￥199</span>
+                <span class="del-goods"></span>
+                <div class="btn-group">
+                  <span>-</span>
+                  <input type="tel" value="1" />
+                  <span>+</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="cart-check-item">
+          <!--checkbox-->
+          <input type="checkbox">
+          <!--商品 详情-->
+          <div class="goods-box">
+            <!--商品展示图片-->
+            <div class="goods-pic">
+              <img src="//d6.yihaodianimg.com/N02/M01/38/75/CgQCslLKGKGAH9sLAAMz3yMF33Y53401_130x130.jpg" alt="">
+            </div>
+            <!--商品详情-->
+            <a class="goods-info" href="javascript:void(0);">
+              <span class="tit">360行车记录仪标准升级版 J501C 安霸A12 高清夜视 WIFI连接 智能管理 黑色</span>
+              <span class="tag">MC-CG321 </span>
+
+              <!--商品 按钮-->
+              <div class="goods-btn clear">
+                <span class="price">￥199</span>
+                <span class="del-goods"></span>
+                <div class="btn-group">
+                  <span>-</span>
+                  <input type="tel" value="1" />
+                  <span>+</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="cart-check-item">
+          <!--checkbox-->
+          <input type="checkbox">
+          <!--商品 详情-->
+          <div class="goods-box">
+            <!--商品展示图片-->
+            <div class="goods-pic">
+              <img src="//d6.yihaodianimg.com/N02/M01/38/75/CgQCslLKGKGAH9sLAAMz3yMF33Y53401_130x130.jpg" alt="">
+            </div>
+            <!--商品详情-->
+            <a class="goods-info" href="javascript:void(0);">
+              <span class="tit">360行车记录仪标准升级版 J501C 安霸A12 高清夜视 WIFI连接 智能管理 黑色</span>
+              <span class="tag">MC-CG321 </span>
+
+              <!--商品 按钮-->
+              <div class="goods-btn clear">
+                <span class="price">￥199</span>
+                <span class="del-goods"></span>
+                <div class="btn-group">
+                  <span>-</span>
+                  <input type="tel" value="1" />
+                  <span>+</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="cart-check-item">
+          <!--checkbox-->
+          <input type="checkbox">
+          <!--商品 详情-->
+          <div class="goods-box">
+            <!--商品展示图片-->
+            <div class="goods-pic">
+              <img src="//d6.yihaodianimg.com/N02/M01/38/75/CgQCslLKGKGAH9sLAAMz3yMF33Y53401_130x130.jpg" alt="">
+            </div>
+            <!--商品详情-->
+            <a class="goods-info" href="javascript:void(0);">
+              <span class="tit">360行车记录仪标准升级版 J501C 安霸A12 高清夜视 WIFI连接 智能管理 黑色</span>
+              <span class="tag">MC-CG321 </span>
+
+              <!--商品 按钮-->
+              <div class="goods-btn clear">
+                <span class="price">￥199</span>
+                <span class="del-goods"></span>
+                <div class="btn-group">
+                  <span>-</span>
+                  <input type="tel" value="1" />
+                  <span>+</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="cart-check-item">
+          <!--checkbox-->
+          <input type="checkbox">
+          <!--商品 详情-->
+          <div class="goods-box">
+            <!--商品展示图片-->
+            <div class="goods-pic">
+              <img src="//d6.yihaodianimg.com/N02/M01/38/75/CgQCslLKGKGAH9sLAAMz3yMF33Y53401_130x130.jpg" alt="">
+            </div>
+            <!--商品详情-->
+            <a class="goods-info" href="javascript:void(0);">
+              <span class="tit">360行车记录仪标准升级版 J501C 安霸A12 高清夜视 WIFI连接 智能管理 黑色</span>
+              <span class="tag">MC-CG321 </span>
+              <!--商品 按钮-->
+              <div class="goods-btn clear">
+                <span class="price">￥199</span>
+                <span class="del-goods"></span>
+                <div class="btn-group">
+                  <span>-</span>
+                  <input type="tel" value="1" />
+                  <span>+</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--购物车底部-->
+      <div class="cart-foot">
+        <div class="checkall">
+          <input type="checkbox">
+        </div>
+        <!--商品总价-->
+        <div class="price-all">
+          <div class="num">共选择<i>5</i>件商品</div>
+          <span class="price">总价：<i>￥88888.00</i></span>
+        </div>
+        <!--结算-->
+        <div class="get-order" onclick='window.location.href="account.html"'>下订单(<span>5</span>)</div>
+      </div>
+    </div>
+    <!--回到顶部-->
+    <div class="backTop"></div>
+  </div>
+
+  <script src=" ../../dist/lib/js/jquery.min.js "></script>
+  <script src="../../dist/lib/js/fastclick.js "></script>
+  <script src="../../dist/lib/js/swiper-3.4.0.jquery.min.js "></script>
+  <script src="../../dist/js/all.min.js "></script>
+  <script>
+    backTop(".backTop");
+  </script>
+</body>
+
+</html>

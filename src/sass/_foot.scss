@@ -1,0 +1,12 @@
+//所有底部样式
+.all-foot {
+  background-color: #fff;
+  padding: px2rem(20);
+  color: #999;
+  span {
+    display: block;
+    text-align: center;
+    font-size: px2rem(32);
+    line-height: 1.4;
+  }
+}

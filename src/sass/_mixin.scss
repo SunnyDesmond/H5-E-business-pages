@@ -1,0 +1,23 @@
+     // 将1080 psd稿的px转化成rem
+     @function px2rem($px) {
+       @return $px/108+rem;
+     }
+     
+     @function grid($n) {
+       @return 100%/$n;
+     }
+     
+     // 超出长度。。。
+     @mixin ellipsis {
+       overflow: hidden;
+       text-overflow: ellipsis;
+       white-space: nowrap;
+     }
+     
+     //  icon
+     @mixin icon {
+       background-position: center center;
+       background-repeat: no-repeat;
+       background-size: contain;
+       display: block;
+     }

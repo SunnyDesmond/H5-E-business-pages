@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ch-zn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="renderer" content="webkit" />
+  <meta name="keywords" content="开来橱柜" />
+  <meta name="description" content="开来橱柜" />
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>支付</title>
+  <link rel="stylesheet" href="../../dist/lib/css/reset.min.css" />
+  <link rel="stylesheet" href="../../dist/lib/css/swiper-3.4.0.min.css" />
+  <link rel="stylesheet" href="../../dist/css/all.min.css" />
+  <script src="../../dist/lib/js/flexible.js"></script>
+</head>
+
+<body class="bg-gary">
+  <!--在DOM加载前 内联JS，判断页面所处的设备-->
+  <script>
+    if (!dpr && !scale) {
+      var isAndroid = win.navigator.appVersion.match(/android/gi);
+      var isIPhone = win.navigator.appVersion.match(/iphone/gi);
+      var devicePixelRatio = win.devicePixelRatio;
+      if (isIPhone) {
+        // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+        if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {
+          dpr = 3;
+        } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)) {
+          dpr = 2;
+        } else {
+          dpr = 1;
+        }
+      } else {
+        // 其他设备下，仍旧使用1倍的方案
+        dpr = 1;
+      }
+      scale = 1 / dpr;
+    }
+  </script>
+  <div class="all-wrap">
+    <div class="all-head">
+      <!--购物车 头部-->
+      <div class="cart-tit-wrap">
+        <a class="back" href="javascript:window.history.back();"></a>
+        <div class="tit">支付</div>
+      </div>
+    </div>
+    <div class="all-body">
+      <!--结算详情-->
+      <div class="account-wrap">
+        <h2 class="tips">订单提交成功，请您尽快付款！订单号：<span>49418789382</span></h2>
+        <!--具体参数-->
+        <div class="box">
+          <div class="bd">
+            <div class="item">
+              <label for="">付款银行</label>
+              <span class="text">中国银行</span>
+            </div>
+            <div class="item">
+              <label for="">付款账号</label>
+              <span class="text">6216 8888 0000 987</span>
+            </div>
+            <div class="item">
+              <label for="">收款账号</label>
+              <span class="text">6218 9876 7787 878</span>
+            </div>
+            <div class="item">
+              <label for="">收款人</label>
+              <span class="text">钱XX</span>
+            </div>
+            <div class="item">
+              <label for="">收款金额</label>
+              <span class="text">￥44500.00</span>
+            </div>
+            <div class="item">
+              <label for="">付款方式</label>
+              <select class="text" name="" id="">
+               <option value="1">现金</option>
+               <option value="2">银行卡</option>
+                <option value="3">支票</option>
+                 <option value="4">支付宝/微信</option>
+             </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-groups">
+          <button onclick='show(".popBox-wrap")' class="ok">确认付款</button>
+          <button class="wait" onclick='window.location.href="i.html"'>稍后付款</button>
+        </div>
+      </div>
+    </div>
+    <!--回到顶部-->
+    <div class="backTop"></div>
+    <div class="popBox-wrap">
+      <div class="pop-pay-success">
+        <div class="hd">
+          <h1>付款成功！</h1>
+        </div>
+        <div class="ft">
+          <button onclick='window.location.href="order.html"' class="save">查看我的订单</button>
+          <button onclick='window.location.href="i.html"' class="cancel">返回首页</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src=" ../../dist/lib/js/jquery.min.js "></script>
+  <script src="../../dist/lib/js/fastclick.js "></script>
+  <script src="../../dist/lib/js/swiper-3.4.0.jquery.min.js "></script>
+  <script src="../../dist/js/all.min.js "></script>
+  <script>
+    backTop(".backTop");
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ch-zn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="renderer" content="webkit" />
+  <meta name="keywords" content="开来橱柜" />
+  <meta name="description" content="开来橱柜" />
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>开来橱柜</title>
+  <link rel="stylesheet" href="../../dist/lib/css/reset.min.css" />
+  <link rel="stylesheet" href="../../dist/lib/css/swiper-3.4.0.min.css" />
+  <link rel="stylesheet" href="../../dist/css/all.min.css" />
+  <script src="../../dist/lib/js/flexible.js"></script>
+</head>
+
+<body class="bg-white">
+  <!--在DOM加载前 内联JS，判断页面所处的设备-->
+  <script>
+    if (!dpr && !scale) {
+      var isAndroid = win.navigator.appVersion.match(/android/gi);
+      var isIPhone = win.navigator.appVersion.match(/iphone/gi);
+      var devicePixelRatio = win.devicePixelRatio;
+      if (isIPhone) {
+        // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+        if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {
+          dpr = 3;
+        } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)) {
+          dpr = 2;
+        } else {
+          dpr = 1;
+        }
+      } else {
+        // 其他设备下，仍旧使用1倍的方案
+        dpr = 1;
+      }
+      scale = 1 / dpr;
+    }
+  </script>
+  <div class="all-wrap bg-gary">
+    <div class="all-head">
+      <div class="searchBar-wrap">
+        <!--logo-->
+        <div class="logo">
+          <a href="javascript:;"> <img src="../../dist/img/1.jpg" alt=""></a>
+        </div>
+        <!--search-->
+        <div class="search">
+          <span id="icon-search" class="icon icon-search"></span>
+          <input type="text" placeholder="请输入商品">
+        </div>
+        <div class="btn-group">
+          <!--category-->
+          <div class="login">
+            <a href="javascript:;"></a>
+          </div>
+          <!--cart-->
+          <div class="cart">
+            <a href="cart.html"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="all-body">
+      <!--banner-->
+      <div class="swiper-container banner">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="//d6.yihaodianimg.com/N11/M01/02/DC/ChEwoVlP2kmAc-ijAAHEcJXXXdk96200.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="//d8.yihaodianimg.com/N09/M01/3B/9B/ChEi11lP2oqACvfRAAHBKIY66Zo01800.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="//d8.yihaodianimg.com/N08/M0A/57/02/ChEi1VlP21SAd15FAAJ1jlYcJEc15800.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="//d7.yihaodianimg.com/N11/M04/02/83/ChEwollEmriAIYV8AALBeqV2hCw97600.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <!--category-->
+      <div class="category-wrap">
+        <div class="items">
+          <a href="category.html">
+            <i class="icon icon1"></i>
+            <span>烟机</span>
+          </a>
+        </div>
+        <div class="items">
+          <a href="category.html">
+            <i class="icon icon2"></i>
+            <span>灶具</span>
+          </a>
+        </div>
+        <div class="items">
+          <a href="category.html">
+            <i class="icon icon3"></i>
+            <span>烤箱</span>
+          </a>
+        </div>
+        <div class="items">
+          <a href="category.html">
+            <i class="icon icon4"></i>
+            <span>蒸箱</span>
+          </a>
+        </div>
+        <div class="items">
+          <a href="category.html">
+            <i class="icon icon5"></i>
+            <span>蒸汽烤箱</span>
+          </a>
+        </div>
+        <div class="items">
+          <a href="category.html">
+            <i class="icon icon6"></i>
+            <span>烤箱抽屉</span>
+          </a>
+        </div>
+        <div class="items">
+          <a href="category.html">
+            <i class="icon icon7"></i>
+            <span>微波炉</span>
+          </a>
+        </div>
+        <div class="items">
+          <a href="category.html">
+            <i class="icon icon8"></i>
+            <span>消毒柜</span>
+          </a>
+        </div>
+        <div class="items">
+          <a href="category.html">
+            <i class="icon icon9"></i>
+            <span>洗碗机</span>
+          </a>
+        </div>
+        <div class="items">
+          <a href="category.html">
+            <i class="icon icon10"></i>
+            <span>冰箱</span>
+          </a>
+        </div>
+        <div class="items">
+          <a href="category.html">
+            <i class="icon icon11"></i>
+            <span>洗衣机</span>
+          </a>
+        </div>
+        <div class="items">
+          <a href="category.html">
+            <i class="icon icon12"></i>
+            <span>咖啡机</span>
+          </a>
+        </div>
+        <div class="items">
+          <a href="category.html">
+            <i class="icon icon13"></i>
+            <span>热水器</span>
+          </a>
+        </div>
+        <div class="items">
+          <a href="category.html">
+            <i class="icon icon14"></i>
+            <span>酒柜</span>
+          </a>
+        </div>
+      </div>
+      <!--hot sale-->
+      <div class="hot-wrap">
+        <h1 class="sec-title"><span>————</span>热卖推荐<span>————</span></h1>
+        <div class="hot-main">
+          <div class="hot-item">
+            <a href="goods.html">
+              <div class="pic">
+                <img src="https://m.360buyimg.com/mobilecms/s357x357_jfs/t1033/244/564308021/127677/7f0da0d3/5530aa2fNfa2528b7.jpg!q50.jpg" alt="">
+              </div>
+              <div class="item-info">
+                <span class="item-tit">碧润 290ML 迷你系列 USB加湿器 BR-01 白色</span>
+                <div class="item-per clear">
+                  <span class="price fl"><i>￥</i>18.3</span>
+                  <button onclick="alert(2);" class="btn fr">立即抢购</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="hot-item">
+            <a href="goods.html">
+              <div class="pic">
+                <img src="https://m.360buyimg.com/mobilecms/s357x357_jfs/t3085/31/3315701430/180675/f655556a/57ee2f5eN9ad17bf4.jpg!q50.jpg">
+              </div>
+              <div class="item-info ">
+                <span class="item-tit ">Wikileaks美肌解密 离子美容仪 WL-1803 白色</span>
+                <div class="item-per clear ">
+                  <span class="price fl "><i>￥</i>18.3</span>
+                  <button class="btn fr ">立即抢购</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="hot-item ">
+            <a href="goods.html">
+              <div class="pic ">
+                <img src="https://m.360buyimg.com/mobilecms/s357x357_jfs/t4738/346/737305096/273020/bb1c7221/58e76478N5918e728.jpg!q50.jpg" alt=" ">
+              </div>
+              <div class="item-info ">
+                <span class="item-tit ">Galanz 格兰仕 20L 微波炉 G70D20CN1P-D2(S0)</span>
+                <div class="item-per clear ">
+                  <span class="price fl "><i>￥</i>18.3</span>
+                  <button class="btn fr ">立即抢购</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="hot-item ">
+            <a href="goods.html">
+              <div class="pic ">
+                <img src="https://m.360buyimg.com/mobilecms/s357x357_jfs/t5764/231/2259291376/191257/573057cd/592f782cN0388a221.jpg!q50.jpg" alt=" ">
+              </div>
+              <div class="item-info ">
+                <span class="item-tit ">云麦好轻 智能体脂秤 蓝牙APP控制 微联智能 体重秤家用秤电子称健康秤脂肪秤 居家白</span>
+                <div class="item-per clear ">
+                  <span class="price fl "><i>￥</i>18.3</span>
+                  <button class="btn fr ">立即抢购</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="hot-item ">
+            <a href="goods.html">
+              <div class="pic ">
+                <img src="https://m.360buyimg.com/mobilecms/s357x357_jfs/t3211/104/550283976/137565/bbe9951a/57ba6c9aN0c6be511.jpg!q50.jpg" alt=" ">
+              </div>
+              <div class="item-info ">
+                <span class="item-tit ">小米插线板（含3口USB 2A快充） 白色</span>
+                <div class="item-per clear ">
+                  <span class="price fl "><i>￥</i>18.3</span>
+                  <button class="btn fr ">立即抢购</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="hot-item ">
+            <a href="goods.html">
+              <div class="pic ">
+                <img src="https://m.360buyimg.com/mobilecms/s357x357_jfs/t3754/93/859730387/145590/72759017/5819cbc0Na5bad5e9.jpg!q50.jpg" alt=" ">
+              </div>
+              <div class="item-info ">
+                <span class="item-tit ">singfun 先锋 电风扇 DD1112/FS40-11G</span>
+                <div class="item-per clear ">
+                  <span class="price fl "><i>￥</i>18.3</span>
+                  <button class="btn fr ">立即抢购</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="hot-item ">
+            <a href="goods.html">
+              <div class="pic ">
+                <img src="https://m.360buyimg.com/mobilecms/s357x357_jfs/t4474/164/2555147144/113456/1e9e69cb/58f08e5aNde02a2f1.jpg!q50.jpg" alt=" ">
+              </div>
+              <div class="item-info ">
+                <span class="item-tit ">SUPOR苏泊尔 5L 智能电压力锅 CYSB50FCW20QJ-100</span>
+                <div class="item-per clear ">
+                  <span class="price fl "><i>￥</i>18.3</span>
+                  <button class="btn fr ">立即抢购</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="hot-item ">
+            <a href="goods.html">
+              <div class="pic ">
+                <img src="//m.360buyimg.com//mobilecms/s276x276_jfs/t961/127/1525243165/182897/d63dfde0/573149d5Na69a5a66.jpg!q70.jpg" alt=" ">
+              </div>
+              <div class="item-info ">
+                <span class="item-tit ">Midea 美的 电风扇 机械 塔扇 FZ10-15BW 白色</span>
+                <div class="item-per clear ">
+                  <span class="price fl "><i>￥</i>18.3</span>
+                  <button class="btn fr ">立即抢购</button>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="all-foot">
+      <span class="copyright">© Copyright 2017. Kailai ambry co., LTD. </span>
+      <span>苏ICP备14044681号-3</span>
+    </div>
+    <div class="backTop"></div>
+  </div>
+
+
+
+  <script src=" ../../dist/lib/js/jquery.min.js "></script>
+  <script src="../../dist/lib/js/fastclick.js "></script>
+  <script src="../../dist/lib/js/swiper-3.4.0.jquery.min.js "></script>
+  <script src="../../dist/js/all.min.js "></script>
+  <script>
+    new Swiper('.swiper-container', {
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      autoplay: 5000,
+    });
+    // 滑动改变搜索框状态
+    slideSearch();
+    backTop(".backTop");
+  </script>
+</body>
+
+</html>

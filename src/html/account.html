@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ch-zn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="renderer" content="webkit" />
+  <meta name="keywords" content="开来橱柜" />
+  <meta name="description" content="开来橱柜" />
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>结算</title>
+  <link rel="stylesheet" href="../../dist/lib/css/reset.min.css" />
+  <link rel="stylesheet" href="../../dist/lib/css/swiper-3.4.0.min.css" />
+  <link rel="stylesheet" href="../../dist/css/all.min.css" />
+  <script src="../../dist/lib/js/flexible.js"></script>
+</head>
+
+<body class="bg-gary">
+  <!--在DOM加载前 内联JS，判断页面所处的设备-->
+  <script>
+    if (!dpr && !scale) {
+      var isAndroid = win.navigator.appVersion.match(/android/gi);
+      var isIPhone = win.navigator.appVersion.match(/iphone/gi);
+      var devicePixelRatio = win.devicePixelRatio;
+      if (isIPhone) {
+        // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+        if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {
+          dpr = 3;
+        } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)) {
+          dpr = 2;
+        } else {
+          dpr = 1;
+        }
+      } else {
+        // 其他设备下，仍旧使用1倍的方案
+        dpr = 1;
+      }
+      scale = 1 / dpr;
+    }
+  </script>
+  <div class="all-wrap">
+    <div class="all-head">
+      <!--购物车 头部-->
+      <div class="cart-tit-wrap">
+        <a class="back" href="javascript:window.history.back();"></a>
+        <div class="tit">结算页</div>
+      </div>
+    </div>
+    <div class="all-body">
+      <!--结算详情-->
+      <div class="account-wrap">
+        <!--具体参数-->
+        <div class="box">
+          <h1 class="hd">基本信息</h1>
+          <div class="bd">
+            <div class="item">
+              <label for="">客户姓名</label>
+              <span class="text">隔壁老王</span>
+            </div>
+            <div class="item">
+              <label for="">电话</label>
+              <span class="text">13987652876</span>
+            </div>
+            <div class="item">
+              <label for="">地址</label>
+              <span class="text">江苏省南京市雨花台区软件大道66号</span>
+            </div>
+            <div class="item">
+              <label for="">合同号</label>
+              <span class="text">KL201702160013</span>
+            </div>
+            <div class="item">
+              <label for="">合同分号</label>
+              <span class="text">KL201702160013-2-1</span>
+            </div>
+            <div class="item">
+              <label for="">订货日期</label>
+              <span class="text">2017年2月16日</span>
+            </div>
+            <div class="item">
+              <label for="">是否有橱柜订单</label>
+              <span class="text">是</span>
+            </div>
+            <div class="item">
+              <label for="">送货日期</label>
+              <span class="text">跟橱柜一起送货</span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <h1 class="hd">财务信息</h1>
+          <div class="bd">
+            <div class="item">
+              <label for="">商品总金额</label>
+              <span class="text">￥44497.00</span>
+            </div>
+            <div class="item">
+              <label for="">运费</label>
+              <span class="text">￥100</span>
+            </div>
+            <div class="item">
+              <label for="">应付总额</label>
+              <span class="text">￥44597.00</span>
+            </div>
+            <div class="item">
+              <label for="">实付总额</label>
+              <input type="text" class="text" value="￥45000.00">
+            </div>
+            <div class="item">
+              <label for="">发票信息</label>
+              <span class="text">不开发票<a class="change" href='javascript:show(".popBox-wrap")'>修改</a></span>
+            </div>
+          </div>
+        </div>
+        <button class="submit-btn" onclick='window.location.href="pay.html"'>提交订单</button>
+      </div>
+    </div>
+    <!--回到顶部-->
+    <div class="backTop"></div>
+
+    <div class="popBox-wrap">
+      <div class="pop-ticket">
+        <!--发票弹框-->
+        <div class="hd">
+          <span class="cur">普通发票</span>
+          <span>增值税发票</span>
+        </div>
+        <div class="bd">
+          <div class="tab-bd">
+            <div class="item">
+              <label for="">发票抬头:</label>
+              <input type="text" class="text">
+            </div>
+            <div class="item">
+              <label for="">发票内容:</label>
+              <select name="" id="">
+               <option value="1">不开发票</option>
+               <option value="2">明细</option>
+             </select>
+            </div>
+          </div>
+          <div class="tab-bd">
+            <h3 class="attention">我公司依法开具发票，如您购买的商品按税法规定属于不得从增值税销项税额中抵扣的项目（例如集体福利或个人消费等），请您选择普通发票。</h3>
+            <div class="item">
+              <label for="">开票方式:</label>
+              <span class="text">订单完成后开票</span>
+            </div>
+            <div class="item">
+              <label for="">发票内容:</label>
+              <span class="text">明细</span>
+            </div>
+            <div class="item">
+              <label for="">单位名称:</label>
+              <input class="text" type="text" />
+            </div>
+            <div class="item">
+              <label for="">纳税人识别码:</label>
+              <input class="text" type="text" />
+            </div>
+            <div class="item">
+              <label for="">注册地址:</label>
+              <input class="text" type="text" />
+            </div>
+            <div class="item">
+              <label for="">注册电话:</label>
+              <input class="text" type="text" />
+            </div>
+            <div class="item">
+              <label for="">开户银行:</label>
+              <input class="text" type="text" />
+            </div>
+            <div class="item">
+              <label for="">银行账户:</label>
+              <input class="text" type="text" />
+            </div>
+            <div class="item">
+              <label for="">收票人姓名:</label>
+              <input class="text" type="text" />
+            </div>
+            <div class="item">
+              <label for="">收票人电话:</label>
+              <input class="text" type="text" />
+            </div>
+            <div class="item">
+              <label for="">收票人地址:</label>
+              <input class="text" type="text" />
+            </div>
+          </div>
+        </div>
+        <div class="ft">
+          <button onclick='hide(".popBox-wrap")' class="save">保存</button>
+          <button onclick='hide(".popBox-wrap")' class="cancel">取消</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src=" ../../dist/lib/js/jquery.min.js "></script>
+  <script src="../../dist/lib/js/fastclick.js "></script>
+  <script src="../../dist/lib/js/swiper-3.4.0.jquery.min.js "></script>
+  <script src="../../dist/js/all.min.js "></script>
+  <script>
+    backTop(".backTop");
+    tab(".pop-ticket .hd span", ".pop-ticket .bd .tab-bd");
+  </script>
+</body>
+
+</html>

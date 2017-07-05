@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ch-zn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="renderer" content="webkit" />
+  <meta name="keywords" content="开来橱柜" />
+  <meta name="description" content="开来橱柜" />
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>详细分类</title>
+  <link rel="stylesheet" href="../../dist/lib/css/reset.min.css" />
+  <link rel="stylesheet" href="../../dist/lib/css/swiper-3.4.0.min.css" />
+  <link rel="stylesheet" href="../../dist/css/all.min.css" />
+  <script src="../../dist/lib/js/flexible.js"></script>
+</head>
+
+<body class="bg-white">
+  <!--在DOM加载前 内联JS，判断页面所处的设备-->
+  <script>
+    if (!dpr && !scale) {
+      var isAndroid = win.navigator.appVersion.match(/android/gi);
+      var isIPhone = win.navigator.appVersion.match(/iphone/gi);
+      var devicePixelRatio = win.devicePixelRatio;
+      if (isIPhone) {
+        // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+        if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {
+          dpr = 3;
+        } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)) {
+          dpr = 2;
+        } else {
+          dpr = 1;
+        }
+      } else {
+        // 其他设备下，仍旧使用1倍的方案
+        dpr = 1;
+      }
+      scale = 1 / dpr;
+    }
+  </script>
+  <div class="all-wrap bg-gary">
+    <div class="all-head static">
+      <div class="searchBar-wrap">
+        <!--back-->
+        <div class="back">
+          <a href="javascript:window.history.back();"></a>
+        </div>
+        <!--search-->
+        <div class="search">
+          <span id="icon-search" class="icon icon-search"></span>
+          <input type="text" placeholder="请输入商品">
+        </div>
+        <div class="btn-group">
+          <!--category-->
+          <div class="login">
+            <a href="javascript:;"></a>
+          </div>
+          <!--cart-->
+          <div class="cart">
+            <a href="javascript:;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="all-body">
+      <div class="filter-wrap">
+        <!--收货地址-->
+        <div class="address">
+          <span>选择收货地址：</span>
+          <input type="text" readonly>
+        </div>
+        <!--筛选规则-->
+        <div class="filter-group">
+          <div class="group">
+            <span class="tit">价格</span>
+            <span class="arrow">
+              <i class="up-arr"></i>
+              <i class="down-arr"></i>
+            </span>
+          </div>
+          <div class="group">
+            <span class="tit">上架时间</span>
+            <span class="arrow">
+              <i class="up-arr"></i>
+              <i class="down-arr"></i>
+            </span>
+          </div>
+          <div class="group">
+            <span class="tit">库存数</span>
+            <span class="arrow">
+              <i class="up-arr"></i>
+              <i class="down-arr"></i>
+            </span>
+          </div>
+          <div class="group">
+            <span class="tit">仅显示有货</span>
+          </div>
+        </div>
+      </div>
+      <div class="goods-wrap">
+        <div class="item">
+          <a href="goods.html">
+            <div class="goods-pic">
+              <img src="//d7.yihaodianimg.com/N10/M0B/58/DE/ChEi21lLXziAfJLzAAEvC0gXtQA37401_160x160.jpg" alt="">
+            </div>
+            <div class="goods-main">
+              <span class="brief">Joyoung 九阳 电磁炉 JYC-21ES55C 内含汤锅</span>
+              <div class="comment_box">
+                <span>库存<i>4</i>件</span>
+              </div>
+            </div>
+            <div class="goods-buy">
+              <span class="new-price">
+                <i>￥1999</i>
+              </span>
+              <div class="btns">
+                <button class="add-cart" onclick="alert(2);">加入购物车</button>
+                <button class="buy-now" onclick="alert(3)">立即购买</button>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="goods.html">
+            <div class="goods-pic">
+              <img src="//d8.yihaodianimg.com/N08/M07/A8/73/ChEi1lhPahCAG8u2AAICm3ZHmVQ40401_160x160.jpg" alt="">
+            </div>
+            <div class="goods-main">
+              <span class="brief">Midea 美的 电磁炉 C21-WT2121</span>
+              <div class="comment_box">
+                <span>库存<i>4</i>件</span>
+              </div>
+            </div>
+            <div class="goods-buy">
+              <span class="new-price">
+                <i>￥1999</i>
+              </span>
+              <div class="btns">
+                <button class="add-cart" onclick="alert(2);">加入购物车</button>
+                <button class="buy-now" onclick="alert(3)">立即购买</button>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="goods.html">
+            <div class="goods-pic">
+              <img src="//d8.yihaodianimg.com/N07/M04/2A/DD/CgQIz1d_VCWAYxe2AAYwZF6immI47901_160x160.jpg" alt="">
+            </div>
+            <div class="goods-main">
+              <span class="brief">Bear 小熊 1L 家用全自动陶瓷四分杯不锈钢内胆纳豆机系列 酸奶机 SNJ-560</span>
+              <div class="comment_box">
+                <span>库存<i>4</i>件</span>
+              </div>
+            </div>
+            <div class="goods-buy">
+              <span class="new-price">
+                <i>￥1999</i>
+              </span>
+              <div class="btns">
+                <button class="add-cart" onclick="alert(2);">加入购物车</button>
+                <button class="buy-now" onclick="alert(3)">立即购买</button>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="goods.html">
+            <div class="goods-pic">
+              <img src="//d7.yihaodianimg.com/N09/M0B/61/52/ChEi2FjkTTeAcZVXAAZfCiYgVjU27901_160x160.jpg" alt="">
+            </div>
+            <div class="goods-main">
+              <span class="brief">Bear 小熊 2L 家用多功能米酒自制酵素机系列 酸奶机 SNJ-A20T1</span>
+              <div class="comment_box">
+                <span>库存<i>4</i>件</span>
+              </div>
+            </div>
+            <div class="goods-buy">
+              <span class="new-price">
+                <i>￥1999</i>
+              </span>
+              <div class="btns">
+                <button class="add-cart" onclick="alert(2);">加入购物车</button>
+                <button class="buy-now" onclick="alert(3)">立即购买</button>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="goods.html">
+            <div class="goods-pic">
+              <img src="//d7.yihaodianimg.com/N10/M06/25/7D/ChEi21b1BkOAIT8PAAa56r06h1g98901_160x160.jpg" alt="">
+            </div>
+            <div class="goods-main">
+              <span class="brief">Bear 小熊 9L 家用多功能烤箱系列 电烤箱 DKX-A09A1</span>
+              <div class="comment_box">
+                <span>库存<i>4</i>件</span>
+              </div>
+            </div>
+            <div class="goods-buy">
+              <span class="new-price">
+                <i>￥1999</i>
+              </span>
+              <div class="btns">
+                <button class="add-cart" onclick="alert(2);">加入购物车</button>
+                <button class="buy-now" onclick="alert(3)">立即购买</button>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="goods.html">
+            <div class="goods-pic">
+              <img src="//d9.yihaodianimg.com/N08/M08/D6/04/ChEi1lbG3vqAH3J0AATVH83RiC800801_160x160.jpg" alt="">
+            </div>
+            <div class="goods-main">
+              <span class="brief">长帝 38L 全功能专业烘焙型家用电烤箱 TRTF38 上下独立控温 黑色</span>
+              <div class="comment_box">
+                <span>库存<i>4</i>件</span>
+              </div>
+            </div>
+            <div class="goods-buy">
+              <span class="new-price">
+                <i>￥1999</i>
+              </span>
+              <div class="btns">
+                <button class="add-cart" onclick="alert(2);">加入购物车</button>
+                <button class="buy-now" onclick="alert(3)">立即购买</button>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="goods.html">
+            <div class="goods-pic">
+              <img src="https://m.360buyimg.com/mobilecms/s357x357_jfs/t3073/302/4473877300/230704/c3065b51/58477f56N9910f6b6.jpg!q50.jpg" alt="">
+            </div>
+            <div class="goods-main">
+              <span class="brief">创维（Skyworth）D39H 395升十字对开门冰箱 分类储存 多变空间 静音节能大容量冰箱（润金）</span>
+              <div class="comment_box">
+                <span>库存<i>4</i>件</span>
+              </div>
+            </div>
+            <div class="goods-buy">
+              <span class="new-price">
+                <i>￥1999</i>
+              </span>
+              <div class="btns">
+                <button class="add-cart" onclick="alert(2);">加入购物车</button>
+                <button class="buy-now" onclick="alert(3)">立即购买</button>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="goods.html">
+            <div class="goods-pic">
+              <img src="https://m.360buyimg.com/mobilecms/s357x357_jfs/t4384/35/147837403/268350/3dda369/58aff4ecN75b96c1a.jpg!q50.jpg" alt="">
+            </div>
+            <div class="goods-main">
+              <span class="brief">惠普（HP）小欧 270-p030cn 台式办公电脑整机（i3-6100 4G 500G Win10 三年上门）19.5英寸</span>
+              <div class="comment_box">
+                <span>库存<i>4</i>件</span>
+              </div>
+            </div>
+            <div class="goods-buy">
+              <span class="new-price">
+                <i>￥1999</i>
+              </span>
+              <div class="btns">
+                <button class="add-cart" onclick="alert(2);">加入购物车</button>
+                <button class="buy-now" onclick="alert(3)">立即购买</button>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="goods.html">
+            <div class="goods-pic">
+              <img src="https://m.360buyimg.com/mobilecms/s357x357_jfs/t3634/8/2104441033/118340/e277b43c/583f9bfbNfda19615.jpg!q50.jpg" alt="">
+            </div>
+            <div class="goods-main">
+              <span class="brief">迷你一人一锅小火锅电磁炉嵌入式圆形线控触摸火锅店 触摸款</span>
+              <div class="comment_box">
+                <span>库存<i>4</i>件</span>
+              </div>
+            </div>
+            <div class="goods-buy">
+              <span class="new-price">
+                <i>￥1999</i>
+              </span>
+              <div class="btns">
+                <button class="add-cart" onclick="alert(2);">加入购物车</button>
+                <button class="buy-now" onclick="alert(3)">立即购买</button>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="goods.html">
+            <div class="goods-pic">
+              <img src="//d8.yihaodianimg.com/N09/M03/56/24/ChEi2FjdsX6AYtlnAAE6VfTJ8r890701_160x160.jpg" alt="">
+            </div>
+            <div class="goods-main">
+              <span class="brief">kangfu 康夫 2300W 专业电吹风机大功率降噪设计吹风筒KF-8899 (炫酷黑)</span>
+              <div class="comment_box">
+                <span>库存<i>4</i>件</span>
+              </div>
+            </div>
+            <div class="goods-buy">
+              <span class="new-price">
+                <i>￥1999</i>
+              </span>
+              <div class="btns">
+                <button class="add-cart" onclick="alert(2);">加入购物车</button>
+                <button class="buy-now" onclick="alert(3)">立即购买</button>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="goods.html">
+            <div class="goods-pic">
+              <img src="https://m.360buyimg.com/mobilecms/s357x357_jfs/t3028/357/1263533726/39168/deadb204/57c0240eN36310273.jpg!q50.jpg" alt="">
+            </div>
+            <div class="goods-main">
+              <span class="brief">六门双机双温冷藏柜 厨房冰柜 商用立式 冰箱 冷柜 冷藏柜 冰柜 1820*705*1880</span>
+              <div class="comment_box">
+                <span>库存<i>4</i>件</span>
+              </div>
+            </div>
+            <div class="goods-buy">
+              <span class="new-price">
+                <i>￥1999</i>
+              </span>
+              <div class="btns">
+                <button class="add-cart" onclick="alert(2);">加入购物车</button>
+                <button class="buy-now" onclick="alert(3)">立即购买</button>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="goods.html">
+            <div class="goods-pic">
+              <img src="https://m.360buyimg.com/mobilecms/s357x357_jfs/t4219/73/3729732705/299576/75f76a43/58e7e4caNfa3f64cb.png!q50.jpg" alt="">
+            </div>
+            <div class="goods-main">
+              <span class="brief">abcdggd商用冰吧家用冷藏柜小型红酒柜冰柜恒温家用红酒柜带锁</span>
+              <div class="comment_box">
+                <span>库存<i>4</i>件</span>
+              </div>
+            </div>
+            <div class="goods-buy">
+              <span class="new-price">
+                <i>￥1999</i>
+              </span>
+              <div class="btns">
+                <button class="add-cart" onclick="alert(2);">加入购物车</button>
+                <button class="buy-now" onclick="alert(3)">立即购买</button>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="goods.html">
+            <div class="goods-pic">
+              <img src="https://m.360buyimg.com/mobilecms/s357x357_jfs/t3997/82/1103436274/293716/f6ac7e77/586a2017N93fc7adf.png!q50.jpg" alt="">
+            </div>
+            <div class="goods-main">
+              <span class="brief">商用家用饮料冷藏展示柜 超市冷藏食品留样柜 便携立式冷柜 小型冰柜 带锁 野餐烧烤饮</span>
+              <div class="comment_box">
+                <span>库存<i>4</i>件</span>
+              </div>
+            </div>
+            <div class="goods-buy">
+              <span class="new-price">
+                <i>￥1999</i>
+              </span>
+              <div class="btns">
+                <button class="add-cart" onclick="alert(2);">加入购物车</button>
+                <button class="buy-now" onclick="alert(3)">立即购买</button>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="all-foot">
+      <span class="copyright">© Copyright 2017. Kailai ambry co., LTD. </span>
+      <span>苏ICP备14044681号-3</span>
+    </div>
+    <div class="backTop"></div>
+  </div>
+
+  <script src=" ../../dist/lib/js/jquery.min.js "></script>
+  <script src="../../dist/lib/js/fastclick.js "></script>
+  <script src="../../dist/lib/js/swiper-3.4.0.jquery.min.js "></script>
+  <script src="../../dist/js/all.min.js "></script>
+  <script>
+    backTop(".backTop");
+  </script>
+</body>
+
+</html>
