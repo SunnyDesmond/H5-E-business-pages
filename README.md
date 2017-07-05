@@ -6,5 +6,5 @@
 >用法
 
 * `git clone https://git.oschina.net/sunny_des/kailai.git`
-* `npm install`
+* `npm install如果绑定淘宝镜像的话可以使用 cnpm install`
 * `gulp`
